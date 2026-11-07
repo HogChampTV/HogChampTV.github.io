@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HogChampTV</title>
+<meta name="description" content="Check out all of my socials below.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #f4f4f5;
+    --card: #ffffff;
+    --text: #18181b;
+    --muted: #71717a;
+    --border: #e4e4e7;
+    --hover: #fafafa;
+    --accent: #6366f1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101014;
+      --card: #1b1b21;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --border: #2b2b33;
+      --hover: #232329;
+      --accent: #818cf8;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101014;
+    --card: #1b1b21;
+    --text: #f4f4f5;
+    --muted: #a1a1aa;
+    --border: #2b2b33;
+    --hover: #232329;
+    --accent: #818cf8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+  }
+  main {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    object-fit: cover;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+  .bio {
+    color: var(--muted);
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .links a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 18px;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.98rem;
+    transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+  }
+  .links a:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: var(--hover);
+  }
+  .links a:active { transform: translateY(0); }
+  .links svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    fill: currentColor;
+  }
+  .links img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    object-fit: contain;
+    image-rendering: pixelated;
+  }
+  footer {
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  footer a { color: var(--muted); }
+  footer .privacy {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.72rem;
+    opacity: 0.8;
+  }
+</style>
+</head>
+<body>
+<main>
+  <img class="avatar" src="avatar.png" alt="HogChampTV's avatar">
+
+  <h1>HogChampTV</h1>
+  <p class="bio">Check out all of my socials below.</p>
+
+  <ul class="links">
+    <li><a href="https://twitch.tv/hogchamptv" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+      Twitch</a></li>
+
+    <li><a href="https://www.youtube.com/@HogChamp" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+      YouTube</a></li>
+
+    <li><a href="https://x.com/HogChampTV" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41z"/></svg>
+      X / Twitter</a></li>
+
+    <li><a href="https://github.com/HogChampTV" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.05 11.05 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .3.21.66.8.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+      GitHub</a></li>
+
+    <li><a href="https://templeosrs.com/player/overview.php?player=hogchamp" target="_blank" rel="noopener">
+      <img src="ironman.png" alt="" aria-hidden="true">
+      Ironman Account</a></li>
+
+    <li><a href="https://templeosrs.com/player/overview.php?player=thehogchamp" target="_blank" rel="noopener">
+      <img src="ultimate-ironman.png" alt="" aria-hidden="true">
+      Ultimate Ironman Account</a></li>
+  </ul>
+
+  <footer>Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
+    <span class="privacy">This site uses privacy-friendly Cloudflare analytics — no cookies, no personal data.</span>
+  </footer>
+</main>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0c4a1fb4480b480daa0ca9f91183b1e0"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
